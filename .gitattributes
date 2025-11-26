@@ -1,0 +1,43 @@
+# MATLAB/Simulink Binary Files - Cannot be merged, mark as binary
+*.slx binary
+*.slxp binary
+*.mdl binary
+*.mat binary
+*.fig binary
+*.mlx binary
+*.mlapp binary
+*.mldatx binary
+*.sldd binary
+*.ssc binary
+*.sscp binary
+
+# Simulink cache files (should generally be in .gitignore, but mark as binary just in case)
+*.slxc binary
+
+# MATLAB generated files
+*.mexa64 binary
+*.mexw64 binary
+*.mexmaci64 binary
+*.p binary
+
+# MATLAB text files - use LF line endings and enable diff
+*.m text diff=matlab
+*.mlproj text
+*.prj text
+
+# Standard text files
+*.txt text
+*.md text
+*.json text
+*.xml text
+*.yml text
+*.yaml text
+
+# Prevent line ending issues on Windows
+* text=auto
+
+# Lock binary files to prevent merge conflicts (requires Git LFS)
+# Uncomment the following lines if you set up Git LFS:
+# *.slx lockable
+# *.mdl lockable
+# *.mat lockable
