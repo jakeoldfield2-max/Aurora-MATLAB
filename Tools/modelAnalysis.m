@@ -121,6 +121,24 @@ function runAnalyses(fig, checkboxes, modelName, scriptPath)
     % Close the dialog
     close(fig);
 
+    % Ensure model is loaded
+    try
+        if ~bdIsLoaded(modelName)
+            fprintf('Loading model: %s\n', modelName);
+            load_system(modelName);
+        end
+    catch
+        % Model might not be on path, try to find and load it
+        scriptPath = fileparts(mfilename('fullpath'));
+        modelPath = fullfile(scriptPath, '..', [modelName '.slx']);
+        if exist(modelPath, 'file')
+            fprintf('Loading model from: %s\n', modelPath);
+            load_system(modelPath);
+        else
+            error('Could not find model: %s', modelName);
+        end
+    end
+
     % Run selected analyses
     fprintf('\n========================================\n');
     fprintf('       MODEL ANALYSIS REPORT\n');
