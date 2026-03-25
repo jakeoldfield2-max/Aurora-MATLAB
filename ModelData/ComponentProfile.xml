@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MF0 version="1.1" packageUris="http://schema.mathworks.com/mf0/meta/19700101 http://schema.mathworks.com/mf0/systemcomposer_property/2.13 http://schema.mathworks.com/mf0/systemcomposer_services_proxy/1.2">
-  <systemcomposer.services.proxy.ModelResolver type="systemcomposer.services.proxy.ModelResolver" uuid="ff34a36b-5067-4e91-ab82-e6f05a050bf2">
-    <Proxies type="systemcomposer.services.proxy.BidirectionalProxy" uuid="af7aaf84-13d1-4c67-9bf2-9ac2f02dccbd">
-      <Source type="systemcomposer.services.proxy.ProxySource" uuid="aeee0cba-0aba-47b2-8f26-bdb8267250d7"/>
-      <Source type="systemcomposer.services.proxy.ProxySource" uuid="fcb72b5d-7db2-445c-9fab-cc028d409e2f"/>
-      <TargetId>7d5675eb-659a-4ce9-ace4-d16f366ef7a2</TargetId>
-    </Proxies>
-    <modelType>PROFILE_MODEL</modelType>
-    <URI>ComponentProfile</URI>
-  </systemcomposer.services.proxy.ModelResolver>
   <systemcomposer.profile.Profile type="systemcomposer.profile.Profile" uuid="67f5d94b-ef31-4a9a-8b47-e0bd4e65bb02">
     <prototypes type="systemcomposer.profile.Prototype" uuid="34d31fd8-6571-4bc0-9861-7117cc9c0877">
       <appliesTo>Component</appliesTo>
@@ -283,6 +274,17 @@
       </propertySet>
       <elemProxy type="systemcomposer.services.proxy.ProxyTarget" uuid="7d5675eb-659a-4ce9-ace4-d16f366ef7a2"/>
     </prototypes>
+    <prototypes type="systemcomposer.profile.Prototype" uuid="a3aa566d-f1b1-40fe-aadb-284d2cb95004">
+      <connectorLineStyle>DOT</connectorLineStyle>
+      <p_Name>zero_Data</p_Name>
+      <defaultStereotypeMap type="systemcomposer.profile.DefaultStereotypeMap" uuid="893163ad-38c0-4e3c-ba28-eafbcc19518c"/>
+      <metaAttributes type="mf.zero.meta.AttributeMap" uuid="fc300b56-bf31-4a11-8597-6efa8898cb33"/>
+      <propertySet type="systemcomposer.property.PropertySet" uuid="95428a86-63f8-46c1-a153-083bf10e7d16">
+        <p_Name>zero_Data</p_Name>
+        <elemProxy type="systemcomposer.services.proxy.ProxyTarget" uuid="33bda840-9cc4-47fa-95df-e35317713e42"/>
+      </propertySet>
+      <elemProxy type="systemcomposer.services.proxy.ProxyTarget" uuid="e5634b47-8b58-41b6-8def-b50aa00e1261"/>
+    </prototypes>
     <prototypes type="systemcomposer.profile.Prototype" uuid="727869c7-a705-4f47-bd0e-831ea212f84e">
       <p_Name>zero_StructuralForces</p_Name>
       <defaultStereotypeMap type="systemcomposer.profile.DefaultStereotypeMap" uuid="40ac5062-b192-491b-96d5-2b6d90eeed9b"/>
@@ -431,6 +433,15 @@
     <p_Name>ComponentProfile</p_Name>
     <elemProxy type="systemcomposer.services.proxy.ProxyTarget" uuid="475517e4-a22e-4ecb-a58a-138d11e27d0b"/>
   </systemcomposer.profile.Profile>
+  <systemcomposer.services.proxy.ModelResolver type="systemcomposer.services.proxy.ModelResolver" uuid="ff34a36b-5067-4e91-ab82-e6f05a050bf2">
+    <Proxies type="systemcomposer.services.proxy.BidirectionalProxy" uuid="af7aaf84-13d1-4c67-9bf2-9ac2f02dccbd">
+      <Source type="systemcomposer.services.proxy.ProxySource" uuid="aeee0cba-0aba-47b2-8f26-bdb8267250d7"/>
+      <Source type="systemcomposer.services.proxy.ProxySource" uuid="fcb72b5d-7db2-445c-9fab-cc028d409e2f"/>
+      <TargetId>7d5675eb-659a-4ce9-ace4-d16f366ef7a2</TargetId>
+    </Proxies>
+    <modelType>PROFILE_MODEL</modelType>
+    <URI>ComponentProfile</URI>
+  </systemcomposer.services.proxy.ModelResolver>
   <systemcomposer.services.proxy.ModelIdentifier type="systemcomposer.services.proxy.ModelIdentifier" uuid="1ebc69b9-e7d5-45bf-8165-73c0b4ff3168">
     <URI>ComponentProfile</URI>
     <modelType>PROFILE_MODEL</modelType>
